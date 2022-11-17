@@ -30,8 +30,12 @@
 			};
 		},
 		methods:{
-			startChat(){
-				
+			startChat(item){
+				console.log(item)
+				uni.navigateTo({
+					url:`/pages/chating/chating?item=${encodeURIComponent(JSON.stringify(item))}`,
+					
+				})
 			}
 		}
 	}
@@ -66,8 +70,8 @@
 				white-space: nowrap;
 				overflow: hidden;
 				
-				font-size: 32rpx;
-				font-weight: 600;
+				font-size: 28rpx;
+				font-weight: 540;
 				color: #000;
 				.name{
 					margin-top: 10rpx;
