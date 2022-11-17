@@ -3,28 +3,38 @@
 		{
 			"path": "pages/tab/chat/chat",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationStyle": "custom" 
 			}
 		},
 		{
 			"path": "pages/tab/friends/friends",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationStyle": "custom" 
 			}
 		},
 		{
 			"path": "pages/tab/find/find",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationStyle": "custom" 
 			}
 		},
 		{
 			"path": "pages/tab/mine/mine",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				// "navigationBarTitleText": "uni-app"
+				"navigationStyle": "custom" 
 			}
 		}
-	],
+	    ,{
+            "path" : "pages/chating/chating",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
@@ -34,10 +44,11 @@
 	"uniIdRouter": {},
 	"tabBar": {
 		"fontSize": "12px", //字体
-		"borderStyle": "black", //上边框颜色（仅支持白和黑）
+		"borderStyle": "#cdcdcd", //上边框颜色（仅支持白和黑）
 		"color": "#000000", //默认时底部字体颜色
 		"selectedColor": "#1ba824", //选中时的文字颜色
-		"backgroundColor": "rgba(250,250,250)", //背景颜色
+		"backgroundColor": "rgb(244, 244, 244)", //背景颜色
+		"height": "120rpx",
 		"position": "bottom", //可选top，bottom（top仅支持微信小程序）
 		"list": [ //底部以数组形式添加，2--5包括2,5
 			{
@@ -45,6 +56,7 @@
 				"pagePath": "pages/tab/chat/chat", //页面路径
 				"iconPath": "static/tarbar/chat.png", //默认时
 				"selectedIconPath": "static/tarbar/chatActived.png" //点击时
+				
 
 			},
 			{
