@@ -1,0 +1,52 @@
+[
+	{
+		"type":"一号",
+		"id":0,
+		"list":[
+			{
+				"name":"服务",
+				"id":0,
+				"img":"/static/icon/server.png"
+			}
+		]
+	},
+	{
+		"type":"二号",
+		"id":1,
+		"list":[
+			{
+				"name":"收藏",
+				"id":0,
+				"img":"/static/icon/collect.png"
+			},
+			{
+				"name":"朋友圈",
+				"id":0,
+				"img":"/static/icon/pengyou.png"
+			},
+			{
+				"name":"卡包",
+				"id":0,
+				"img":"/static/icon/kabao.png"
+			},
+			{
+				"name":"表情",
+				"id":0,
+				"img":"/static/icon/biaoqing.png"
+			}
+		]
+	},
+	{
+		"type":"三号",
+		"id":2,
+		"list":[
+			{
+				"name":"设置",
+				"id":0,
+				"img":"/static/icon/setting.png"
+			}
+		]
+	}
+	
+	
+]

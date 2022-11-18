@@ -62,15 +62,15 @@
 			{
 				"text": "好友", //底部文字信息
 				"pagePath": "pages/tab/friends/friends", //页面路径
-				"iconPath": "static/tarbar/chat.png", //默认时
-				"selectedIconPath": "static/tarbar/chatActived.png" //点击时
+				"iconPath": "static/tarbar/frients.png", //默认时
+				"selectedIconPath": "static/tarbar/friendsActived.png" //点击时
 
 			},
 			{
 				"text": "发现", //底部文字信息
 				"pagePath": "pages/tab/find/find", //页面路径
-				"iconPath": "static/tarbar/chat.png", //默认时
-				"selectedIconPath": "static/tarbar/chatActived.png" //点击时
+				"iconPath": "static/tarbar/find.png", //默认时
+				"selectedIconPath": "static/tarbar/find_1.png" //点击时
 
 			},
 			{
