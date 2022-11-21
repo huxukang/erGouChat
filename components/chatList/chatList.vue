@@ -1,18 +1,21 @@
 <template>
-	<scroll-view scroll-y class="chat">
-		<view class="cell" v-for="item in userList" :key="item.id" @click="startChat(item)">
-			<view class="cell_image">
-				<image class="c_cell_header" :src="(item.headerImage)"></image>
-			</view>
-			<view class="cell_content">
-				<view class="main">
-					<view class="name">{{item.name}}</view>
-					<view class="message">{{item.message}}</view>
+	<scrollArea :switchBar="true">
+		<scroll-view scroll-y class="chat">
+			<view class="cell" v-for="item in userList" :key="item.id" @click="startChat(item)">
+				<view class="cell_image">
+					<image class="c_cell_header" :src="(item.headerImage)"></image>
 				</view>
-				<text class="time">{{item.time}}</text>
+				<view class="cell_content">
+					<view class="main">
+						<view class="name">{{item.name}}</view>
+						<view class="message">{{item.message}}</view>
+					</view>
+					<text class="time">{{item.time}}</text>
+				</view>
 			</view>
-		</view>
-	</scroll-view>
+		</scroll-view>
+	</scrollArea>
+	
 </template>
 
 <script>
@@ -44,7 +47,7 @@
 <style lang="scss">
 .chat{
 	background-color: #fff;
-	height: calc(100vh - 210rpx);
+	height: 100%;
 	.cell{
 		min-height: 120rpx;
 		display: flex;
@@ -70,8 +73,8 @@
 				white-space: nowrap;
 				overflow: hidden;
 				
-				font-size: 28rpx;
-				font-weight: 540;
+				font-size: 30rpx;
+				font-weight: 550;
 				color: #000;
 				.name{
 					margin-top: 10rpx;

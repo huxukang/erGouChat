@@ -48,7 +48,7 @@
 		"color": "#000000", //默认时底部字体颜色
 		"selectedColor": "#1ba824", //选中时的文字颜色
 		"backgroundColor": "rgb(244, 244, 244)", //背景颜色
-		"height": "120rpx",
+		"height": "60px",
 		"position": "bottom", //可选top，bottom（top仅支持微信小程序）
 		"list": [ //底部以数组形式添加，2--5包括2,5
 			{
@@ -76,8 +76,8 @@
 			{
 				"text": "我", //底部文字信息
 				"pagePath": "pages/tab/mine/mine", //页面路径
-				"iconPath": "static/tarbar/chat.png", //默认时
-				"selectedIconPath": "static/tarbar/chatActived.png" //点击时
+				"iconPath": "static/tarbar/mine.png", //默认时
+				"selectedIconPath": "static/tarbar/mine_1.png" //点击时
 			
 			}
 		]

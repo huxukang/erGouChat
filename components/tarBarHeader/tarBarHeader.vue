@@ -2,7 +2,7 @@
 	<view class="common" 
 	:style="{'background-color':backgroundColor,color:color}"
 	>
-		<!-- 自己自定义类型1 -->
+		<!-- 通用类型1 -->
 		<view class='common_1' v-if="type === '1'">
 			<view class="left">
 				<view v-if="left" @click="onBack">
@@ -22,9 +22,11 @@
 				</view>
 			</view>
 		</view>
-		<!-- 2 -->
-		<view v-else-if="type === '2'">
-			
+		<!-- 2自定义tarBar -->
+		<view v-else-if="type === '2'" :class="'common_2 ' + defaultClass" :style="{height:height + 'rpx'}" >
+			<template v-slot="left"></template>
+			<template v-slot="title"></template>
+			<template v-slot="title"></template>
 		</view>
 	</view>
 </template>
@@ -56,6 +58,14 @@
 			rightIndex:{
 				type:Number,
 				default:0,
+			},
+			height:{
+				type:Number,
+				default:110,
+			},
+			defaultClass:{
+				type: String,
+				default: '',
 			}
 		},
 		data() {
@@ -95,6 +105,10 @@
 				flex: 1;
 				text-align: right;
 			}
+		}
+		
+		common_2{
+			display: flex;
 		}
 	}
 </style>
