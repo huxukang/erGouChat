@@ -6,9 +6,12 @@
 			color='black'
 			:left="false"
 			 />
-		<view >
-			<chatList :userList="userList"></chatList>
-		</view>
+		<scrollArea :switchBar="true">
+			<view style="height: 100%;">
+				<chatList :userList="userList"></chatList>
+			</view>
+			
+		</scrollArea>
 	</view>
 </template>
 

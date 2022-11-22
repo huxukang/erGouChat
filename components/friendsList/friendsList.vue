@@ -1,6 +1,6 @@
 <template>
-	<scroll-view class="friendsList" scroll-y>
-		<view v-for="item in friendsList" :key="item.id" @click="gotoDetail(item.id)">
+	<scroll-view class="friendsList" scroll-y :scroll-into-view="viewId">
+		<view v-for="item in friendsList" :key="item.id" @click="gotoDetail(item.id)" :id="'app_' + item.name" >
 			<view >
 				<view :class="item.list.length === 0 ? '':'label'" >
 					<a :id='item.name'>{{item.list.length > 0 ? item.name:''}}</a>
@@ -30,13 +30,17 @@
 		},
 		data() {
 			return {
-
+				viewId:'app_A'
 			};
 		},
 
 		methods: {
 			gotoDetail(id) {
 				console.log()
+			},
+			scrollID(name){
+				this.viewId = 'app_' + name;
+				console.log(this.viewId)
 			}
 		}
 	}
@@ -45,12 +49,13 @@
 <style lang="scss">
 	.friendsList {
 		// background-color: #fff;
-		height: calc(100vh - 210rpx);
+		height: 100%;
 		.label{
 			padding:15rpx 25rpx;
-			font-size: 20rpx;
+			font-size: 28rpx;
 			color: #5f5f5f;
 			font-weight: 400;
+			background-color: #F8F8F8;
 		}
 
 		.cell {
@@ -72,9 +77,9 @@
 			.name {
 				flex: 1;
 				line-height: 120rpx;
-				border-bottom: 1px solid #dbdbdb;
-				font-size: 26rpx;
-				font-weight: 500;
+				border-bottom: 1px solid #efefef;
+				font-size: 30rpx;
+				font-weight: 600;
 			}
 		}
 	}

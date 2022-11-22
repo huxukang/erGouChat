@@ -1,5 +1,6 @@
 <template>
 	<view class="mine">
+		<tarBarHeader :type="''" ></tarBarHeader>
 		<!-- <tarBarHeader title="微信" backgroundColor='rgb(248, 248, 248)' color='black' /> -->
 		<view class="header">
 			

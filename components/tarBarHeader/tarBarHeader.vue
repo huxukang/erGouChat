@@ -1,32 +1,33 @@
 <template>
-	<view class="common" 
-	:style="{'background-color':backgroundColor,color:color}"
-	>
-		<!-- 通用类型1 -->
-		<view class='common_1' v-if="type === '1'">
-			<view class="left">
-				<view v-if="left" @click="onBack">
-					<uni-icons type="back" size="24" color='black'></uni-icons>
+	<view class="tab" :style="{'background-color':backgroundColor,color:color}">
+		<view :style="{height:statusBarHeight+'px'}"></view>
+		<view class="common" >
+			<!-- 通用类型1 -->
+			<view class='common_1' v-if="type === '1'">
+				<view class="left">
+					<view v-if="left" @click="onBack">
+						<uni-icons type="back" size="24" color='black'></uni-icons>
+					</view>
+				</view>
+				<view class="title">
+					{{title}}
+				</view>
+				<view class="right">
+					<view v-if="rightIndex === 0">
+						<uni-icons type="search" size="24" style='margin-right:25rpx'></uni-icons>
+						<uni-icons type="plus" size="24"></uni-icons>
+					</view>
+					<view v-else-if="rightIndex === 1">
+						<uni-icons type="more-filled" size="24"></uni-icons>
+					</view>
 				</view>
 			</view>
-			<view class="title">
-				{{title}}
+			<!-- 2自定义tarBar -->
+			<view v-else-if="type === '2'" :class="'common_2 ' + defaultClass" :style="{height:height + 'rpx'}">
+				<slot name="left"></slot>
+				<slot name="title"></slot>
+				<slot name="right"></slot>
 			</view>
-			<view class="right">
-				<view v-if="rightIndex === 0">
-					<uni-icons type="search" size="24" style='margin-right:25rpx'></uni-icons>
-					<uni-icons type="plus" size="24"></uni-icons>
-				</view>
-				<view v-else-if="rightIndex === 1">
-					<uni-icons type="more-filled" size="24"></uni-icons>
-				</view>
-			</view>
-		</view>
-		<!-- 2自定义tarBar -->
-		<view v-else-if="type === '2'" :class="'common_2 ' + defaultClass" :style="{height:height + 'rpx'}" >
-			<template v-slot="left"></template>
-			<template v-slot="title"></template>
-			<template v-slot="title"></template>
 		</view>
 	</view>
 </template>
@@ -51,30 +52,35 @@
 				type: String,
 				default: 'black',
 			},
-			left:{
-				type:Boolean,
-				default:true
+			left: {
+				type: Boolean,
+				default: true
 			},
-			rightIndex:{
-				type:Number,
-				default:0,
+			rightIndex: {
+				type: Number,
+				default: 0,
 			},
-			height:{
-				type:Number,
-				default:110,
+			height: {
+				type: Number,
+				default: 110,
 			},
-			defaultClass:{
+			defaultClass: {
 				type: String,
 				default: '',
 			}
 		},
 		data() {
 			return {
-
+				statusBarHeight:0,
 			};
 		},
-		methods:{
-			onBack(){
+		created() {
+			let statusBarObj = this.getPhoneInfo();
+			this.statusBarHeight = statusBarObj.statusBarHeight;
+			console.log(this.statusBarHeight)
+		},
+		methods: {
+			onBack() {
 				uni.navigateBack()
 			}
 		}
@@ -82,12 +88,16 @@
 </script>
 
 <style lang="scss">
+	.tab{
+		position: relative;
+	}
 	.common {
-		position: relative; //注意，建议使用相对定位，因为固定定位会脱离文档流
-		height: 90rpx;
+		//注意，建议使用相对定位，因为固定定位会脱离文档流
+		
 		padding: 0 15rpx;
 
 		.common_1 {
+			height: 90rpx;
 			line-height: 90rpx;
 			display: flex;
 
@@ -106,8 +116,9 @@
 				text-align: right;
 			}
 		}
-		
-		common_2{
+
+		common_2 {
+			height: 90rpx;
 			display: flex;
 		}
 	}

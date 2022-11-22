@@ -1,6 +1,5 @@
 <template>
 	<view>
-		<view :style="{height:statusBarHeight+'px'}"></view>
 		<view :style="{height: scrollHeightcell}">
 			<slot></slot>
 		</view>
@@ -40,12 +39,14 @@
 				}
 				let height;
 				if (this.tarbar) {
+					// height = `calc(100vh - ${this.statusBarHeight}px - 90rpx)`
 					this.switchBar ?
-						height = `calc(100vh - ${this.statusBarHeight}px - 90rpx - 60px)`:
+						height = `calc(100vh - ${this.statusBarHeight || 60}px - 90rpx)`:
 						height =`calc(100vh - ${this.statusBarHeight}px - 90rpx)`;
 				} else {
+					// height = `calc(100vh - ${this.statusBarHeight}px)`;
 					this.switchBar ?
-						height = `calc(100vh - ${this.statusBarHeight}px - 60px)`:
+						height = `calc(100vh - ${this.statusBarHeight || 60}px)`:
 						height = `calc(100vh - ${this.statusBarHeight}px)`
 				}
 				return height;
