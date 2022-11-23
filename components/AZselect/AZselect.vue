@@ -1,16 +1,27 @@
 <template>
-	<view class="showSelect" :style="position? position + ':20rpx':'right:20rpx'">
-		<view class="cell_name" v-for="item in showList" :key="item.name">
-			<uni-tooltip-mine :content="item.name" placement="right" :duration="0" @showText='showText'>
+	<view>
+		<view class="showSelect" :style="position? position + ':20rpx':'right:20rpx'">
+			<!-- <uni-tooltip-mine v-for="item in showList" :key="item.name" :content="item.name" placement="right" :duration="50000000">
 				<text>{{item.name}}</text>
-			</uni-tooltip-mine>	
+			</uni-tooltip-mine> -->
+			<view class="cell_name" v-for="item in showList" :key="item.name">
+				<uni-tooltip-mine :content="item.name" placement="right" :duration="0" @showText='showText'>
+					<text>{{item.name}}</text>
+				</uni-tooltip-mine>
+				
+			</view>
 		</view>
 	</view>
 </template>
 
 <script>
 	export default {
-		name: "showSelect",
+		name:"AZselect",
+		data() {
+			return {
+				
+			};
+		},
 		props: {
 			showList: {
 				type: Array,
@@ -20,11 +31,6 @@
 				type: String,
 				default: 'left'
 			}
-		},
-		data() {
-			return {
-
-			};
 		},
 		methods:{
 			emitName(name){
@@ -38,15 +44,7 @@
 				}catch(err){
 					// app
 					this.$emit('selectAZ',name)
-					// const dom = uni.createSelectorQuery().in(this);
-					// console.log(dom)
-					// const key = '#' + name
-					// dom.select(key).boundingClientRect(data=>{
-					// 	console.log(data)
-					// });
-				}
-				
-				
+				}			
 			},
 			showText(name){
 				this.emitName(name);

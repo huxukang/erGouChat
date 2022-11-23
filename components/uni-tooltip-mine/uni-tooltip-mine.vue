@@ -1,5 +1,5 @@
 <template>
-	<view class="cell-tooltip" @touchstart.native="showMessage"  @touchend.native="hideMessage" @touchleave.native="buildMessage">
+	<view class="cell-tooltip" ref="content" @touchstart="showMessage"  @touchend="hideMessage">
 		<!-- 提示的内容 -->
 		<view class="tooltip" v-if="messageShow">
 			<view class="msg">
@@ -11,7 +11,6 @@
 				</template>
 			</view>
 		</view>
-
 		<!-- 默认slot  -->
 		<slot></slot>
 	</view>
@@ -35,6 +34,10 @@
 			duration: {
 				type: Number,
 				default: 0
+			},
+			// 唯一标识
+			onlyOne:{
+				default: ''
 			}
 		},
 
@@ -60,6 +63,7 @@
 					this.showTime = null;
 				}
 				this.messageShow = true;
+				this.$emit('showText',this.onlyOne || this.content);
 			},
 			hideMessage() {
 				let time = Number(this.duration) || 0;
@@ -68,9 +72,7 @@
 					this.showTime = null;
 				}, this.duration)
 			},
-			buildMessage(){
-				console.log('走了')
-			}
+			
 		}
 	}
 </script>

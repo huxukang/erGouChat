@@ -71,13 +71,13 @@
 		},
 		data() {
 			return {
-				statusBarHeight:0,
+				statusBarHeight:20,
 			};
 		},
 		created() {
 			let statusBarObj = this.getPhoneInfo();
 			this.statusBarHeight = statusBarObj.statusBarHeight;
-			console.log(this.statusBarHeight)
+			// console.log(this.statusBarHeight)
 		},
 		methods: {
 			onBack() {
@@ -94,7 +94,7 @@
 	.common {
 		//注意，建议使用相对定位，因为固定定位会脱离文档流
 		
-		padding: 0 15rpx;
+		padding: 0 35rpx;
 
 		.common_1 {
 			height: 90rpx;
@@ -108,7 +108,7 @@
 			.title {
 				flex: 1;
 				text-align: center;
-				font-weight: 550;
+				font-weight: 601;
 			}
 
 			.right {

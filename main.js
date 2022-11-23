@@ -2,7 +2,6 @@ import App from './App'
 
 // #ifndef VUE3
 import Vue from 'vue'
-import './static/scss/common.scss'
 Vue.config.productionTip = false
 Vue.prototype.getPhoneInfo = function(){
 	const phoneInfo = uni.getSystemInfoSync();// 获取手机系统信息

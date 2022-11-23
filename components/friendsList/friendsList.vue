@@ -51,7 +51,7 @@
 		// background-color: #fff;
 		height: 100%;
 		.label{
-			padding:15rpx 25rpx;
+			padding:15rpx 35rpx;
 			font-size: 28rpx;
 			color: #5f5f5f;
 			font-weight: 400;
@@ -66,7 +66,7 @@
 
 			.header {
 				width: 110rpx;
-				padding: 20rpx 15rpx;
+				padding: 20rpx 30rpx;
 
 				.img {
 					width: 80rpx;

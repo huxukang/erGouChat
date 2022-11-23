@@ -52,13 +52,13 @@
 
 			// padding:0 15rpx;
 			.cell_image {
-				padding: 20rpx 15rpx;
+				padding: 20rpx 30rpx;
 				width: 110rpx;
 				overflow: hidden;
 
 				.c_cell_header {
-					height: 80rpx;
-					width: 80rpx;
+					height: 90rpx;
+					width: 90rpx;
 				}
 			}
 
@@ -75,7 +75,7 @@
 					white-space: nowrap;
 					overflow: hidden;
 
-					font-size: 32rpx;
+					font-size: 34rpx;
 					font-weight: 600;
 					color: #000;
 
@@ -86,7 +86,7 @@
 					.message {
 						color: #bcbcbc;
 						font-size: 24rpx;
-						margin-top: 10rpx;
+						margin-top: 5rpx;
 						font-weight: 500;
 					}
 				}

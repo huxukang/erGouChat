@@ -33,17 +33,20 @@
 
 <style lang="scss">
 .findList{
+	// height: 100%;
+	background-color: #f0f0f0;
 	.big_cell{
 		margin-bottom: 20rpx;
 		.small_cell{
 			background-color: #fff;
-			height: 80rpx ;
+			height: 100rpx ;
 			display: flex;
 			
 			.img_cell{
 				width: 80rpx;
-				padding: 15rpx;
+				padding: 25rpx;
 				padding-right: 0;
+				vertical-align: middle;
 				.img{
 					width: 50rpx;
 					height: 50rpx;
@@ -51,10 +54,10 @@
 			}
 			.content{
 				flex:1;
-				line-height: 79rpx;
-				font-size: 26rpx;
-				padding: 0 15rpx;
-				border-bottom: 1px solid #e8e8e8;
+				line-height: 100rpx;
+				font-size: 32rpx;
+				padding: 0 30rpx;
+				border-bottom: 1px solid #f0f0f0;
 			}
 		}
 	}
