@@ -65,8 +65,8 @@
 			display: flex;
 
 			.header {
-				width: 110rpx;
-				padding: 20rpx 30rpx;
+				// width: 110rpx;
+				padding: 20rpx 25rpx  20rpx 30rpx;
 
 				.img {
 					width: 80rpx;
@@ -78,7 +78,7 @@
 				flex: 1;
 				line-height: 120rpx;
 				border-bottom: 1px solid #efefef;
-				font-size: 30rpx;
+				font-size: 34rpx;
 				font-weight: 600;
 			}
 		}

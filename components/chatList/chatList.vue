@@ -52,7 +52,7 @@
 
 			// padding:0 15rpx;
 			.cell_image {
-				padding: 20rpx 30rpx;
+				padding: 20rpx 10rpx 20rpx 30rpx;
 				width: 110rpx;
 				overflow: hidden;
 
@@ -65,7 +65,7 @@
 			.cell_content {
 				border-bottom: 0.5px solid #eaeaea;
 				flex: 1;
-				padding: 10rpx;
+				padding: 10rpx 10rpx 10rpx 0;
 
 				.main {
 					display: inline-block;

@@ -2,6 +2,7 @@ import App from './App'
 
 // #ifndef VUE3
 import Vue from 'vue'
+import 'common/utils/onPushMessageAll.js'
 Vue.config.productionTip = false
 Vue.prototype.getPhoneInfo = function(){
 	const phoneInfo = uni.getSystemInfoSync();// 获取手机系统信息
@@ -13,6 +14,26 @@ Vue.prototype.getPhoneInfo = function(){
 	statusBarObj.statusBarHeight = phoneInfo.statusBarHeight;
 	return statusBarObj;
 }
+// 支持app后台运行
+// #ifdef APP
+let main = plus.android.runtimeMainActivity();
+plus.runtime.quit = function() {
+    main.moveTaskToBack(false);
+};
+plus.nativeUI.toast = (function(str) {
+	plus.runtime.quit();
+    // if (str =='再次返回退出应用') {
+    //     plus.runtime.quit();
+    // } else {
+    //     uni.showToast({
+    //         title: '再次返回后台运行应用',
+    //         icon: 'none'
+    //     })
+    // }
+});
+// #endif
+
+
 App.mpType = 'app'
 const app = new Vue({
     ...App
