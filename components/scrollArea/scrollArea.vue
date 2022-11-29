@@ -14,6 +14,10 @@
 				type: Number,
 				default: 0
 			},
+			removeHeight:{
+				type:Number,
+				default:0
+			},
 			tarbar: {
 				type: Boolean,
 				default: true
@@ -21,7 +25,7 @@
 			switchBar: {
 				type: Boolean,
 				default: false
-			}
+			},
 		},
 		data() {
 			return {
@@ -41,13 +45,13 @@
 				if (this.tarbar) {
 					// height = `calc(100vh - ${this.statusBarHeight}px - 90rpx)`
 					this.switchBar ?
-						height = `calc(100vh - ${this.statusBarHeight || 60}px - 90rpx)`:
-						height =`calc(100vh - ${this.statusBarHeight}px - 90rpx)`;
+						height = `calc(100vh - ${this.statusBarHeight || 60}px - 90rpx - ${this.removeHeight|| 0}rpx)`:
+						height =`calc(100vh - ${this.statusBarHeight}px - 90rpx - ${this.removeHeight || 0}rpx)`;
 				} else {
 					// height = `calc(100vh - ${this.statusBarHeight}px)`;
 					this.switchBar ?
-						height = `calc(100vh - ${this.statusBarHeight || 60}px)`:
-						height = `calc(100vh - ${this.statusBarHeight}px)`
+						height = `calc(100vh - ${this.statusBarHeight || 60}px) - ${this.removeHeight || 0}rpx)`:
+						height = `calc(100vh - ${this.statusBarHeight}px) - ${this.removeHeight || 0}rpx)`
 				}
 				return height;
 			}

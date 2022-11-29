@@ -10,7 +10,6 @@
 			<view style="height: 100%;">
 				<chatList :userList="userList"></chatList>
 			</view>
-			
 		</scrollArea>
 	</view>
 </template>

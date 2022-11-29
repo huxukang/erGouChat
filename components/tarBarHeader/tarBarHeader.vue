@@ -90,6 +90,7 @@
 <style lang="scss">
 	.tab{
 		position: relative;
+		// top:0
 	}
 	.common {
 		//注意，建议使用相对定位，因为固定定位会脱离文档流
