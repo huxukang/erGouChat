@@ -6,13 +6,13 @@
 			color='black'
 			:rightIndex='1'
 			 />
-			 <scrollArea :switchBar="false" :removeHeight="120">
+			 <scrollArea :switchBar="false" :removeHeight="removeHeight">
 				 <view style="height:100%;overflow: hidden">
 				 	<chating :chatData="chatData.chatDataList" :userId='chatData.userId' ></chating>
 				 </view>
 			 </scrollArea>
 			 <view class="text-input">
-				 <input class="input" cursor-spacing='5px'></input>
+				 <textarea class="input" auto-height  @keyboardheightchange='inputFoucus' :adjust-position='false' @input='handleInputValue'></textarea>
 			 </view>
 	</view>
 </template>
@@ -27,7 +27,7 @@
 					name:''
 				},
 				chatData:chatData,
-				scrollHeight:'calc(100% - 80rpx)',
+				removeHeight:'120rpx',
 			}
 		},
 	
@@ -36,15 +36,33 @@
 			console.log(item);
 			this.user = item
 		},
+		created(){
+			uni.getSystemInfo({
+				success(res) {
+					console.log(res);
+				}
+			})
+		},
 		methods: {
-			
+			inputFoucus(e){
+				let height = 0;
+				if(e.detail.height){
+					height = e.detail.height;
+					this.removeHeight = height + 'px - 120rpx';
+				}else{
+					this.removeHeight = '120rpx';
+				}
+			},
+			handleInputValue(value){
+				//	 一个是保存现在的消息，二就是计算输入框的高度存起来；
+			}
 		}
 	}
 </script>
 
 <style lang='scss'>
 	.text-input{
-		height: 120rpx;
+		min-height: 120rpx;
 		text-align: center;
 		box-sizing: border-box;
 		padding:20rpx 20rpx;
@@ -53,11 +71,15 @@
 		
 			display: inline-block;
 			border-radius: 15rpx;
+			padding: 20rpx ;
+			font-size: 35rpx;
+			line-height: 40rpx;
 			background-color: #fff;
 			width: 500rpx;
-			height: 80rpx;
+			/* max-height: 240rpx;
+			min-height: 40rpx; */
 			text-align: left;
-			padding: 0 25rpx;
+			padding: 20rpx 25rpx;
 		}
 	}
 </style>
