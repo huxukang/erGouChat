@@ -4,12 +4,17 @@
 			<view v-if="item.userId===0" class="other">
 				<image src="../../static/headerImg/02.jpg" class="img"></image>
 				<view class="text">
-					<view class="text-cell">{{item.content}}</view>
+					<view class="text-cell">
+						{{item.content}}
+						<view class="cell-zui"></view>
+					</view>
 				</view>
 			</view>
 			<view v-else class="my">
 				<view class="text">
-					<view class="text-cell">{{item.content}}</view>
+					<view class="text-cell">{{item.content}}
+						<view class="cell-zui"></view>
+					</view>
 				</view>
 				<image src="../../static/headerImg/09.jpg" class="img"></image>
 			</view>
@@ -75,9 +80,25 @@
 					display: inline-block;
 					padding: 15rpx 20rpx;
 					border-radius: 8rpx;
+					.cell-zui{
+						border-right:14rpx solid #fff;
+						border-top: 12rpx solid transparent;
+						border-bottom: 12rpx solid transparent;
+						left:-15rpx;
+						top:30rpx;
+						
+					}
 				}
 			}
 			
+		}
+		.text-cell{
+			position: relative;
+			.cell-zui{
+				position: absolute;
+				
+				
+			}
 		}
 		.my{
 			display: flex;
@@ -87,11 +108,19 @@
 				text-align:right;
 				width: 500rpx;
 				.text-cell{
-					background-color: #63ff20;
+					background-color: #95EC69;
 					display: inline-block;
 					padding: 15rpx 20rpx;
 					text-align: left;
 					border-radius: 8rpx;
+					.cell-zui{
+						border-left:14rpx solid #95EC69;
+						border-top: 12rpx solid transparent;
+						border-bottom: 12rpx solid transparent;
+						right:-15rpx;
+						top:25rpx;
+						
+					}
 				}
 			}
 		}

@@ -1,7 +1,7 @@
 <template>
 	<view class="tab" :style="{'background-color':backgroundColor,color:color}">
 		<view :style="{height:statusBarHeight+'px'}"></view>
-		<view class="common" >
+		<view class="common">
 			<!-- 通用类型1 -->
 			<view class='common_1' v-if="type === '1'">
 				<view class="left">
@@ -15,7 +15,12 @@
 				<view class="right">
 					<view v-if="rightIndex === 0">
 						<uni-icons type="search" size="24" style='margin-right:25rpx'></uni-icons>
-						<uni-icons type="plus" size="24"></uni-icons>
+						
+						<uni-icons type="plus" size="24">
+							
+						</uni-icons>
+						<uni-tooltip content="asda">asdasdas</uni-tooltip>
+
 					</view>
 					<view v-else-if="rightIndex === 1">
 						<uni-icons type="more-filled" size="24"></uni-icons>
@@ -71,7 +76,7 @@
 		},
 		data() {
 			return {
-				statusBarHeight:20,
+				statusBarHeight: 20,
 			};
 		},
 		created() {
@@ -88,13 +93,14 @@
 </script>
 
 <style lang="scss">
-	.tab{
+	.tab {
 		position: relative;
 		// top:0
 	}
+
 	.common {
 		//注意，建议使用相对定位，因为固定定位会脱离文档流
-		
+
 		padding: 0 35rpx;
 
 		.common_1 {
