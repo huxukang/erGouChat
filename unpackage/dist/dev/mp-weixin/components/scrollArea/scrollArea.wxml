@@ -1,0 +1,1 @@
+<view><view style="{{'height:'+(scrollHeightcell)+';'}}"><slot></slot></view></view>

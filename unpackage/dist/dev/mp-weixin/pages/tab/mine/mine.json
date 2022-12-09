@@ -1,0 +1,8 @@
+{
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "tar-bar-header": "/components/tarBarHeader/tarBarHeader",
+    "find-list": "/components/findList/findList",
+    "headers": "/pages/tab/mine/components/header"
+  }
+}

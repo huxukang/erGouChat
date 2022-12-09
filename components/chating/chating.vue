@@ -1,5 +1,5 @@
 <template>
-	<scroll-view scroll-y  class="chating"  scroll-top="100000000">
+	<scroll-view scroll-y  class="chating"  :scroll-into-view='bottom'>
 		<view v-for="item in chatData" :key="item.id" class="chat-cell" >
 			<view v-if="item.userId===0" class="other">
 				<image src="../../static/headerImg/02.jpg" class="img"></image>
@@ -19,7 +19,7 @@
 				<image src="../../static/headerImg/09.jpg" class="img"></image>
 			</view>
 		</view>
-		
+		<view id="bottom" style="height: 10rpx;"></view>
 	</scroll-view>
 </template>
 
@@ -38,16 +38,26 @@
 				type:Number,
 				default:''
 			},
-			
+			num:{
+				
+			}
 		},
 		
-		created() {
-			
+		mounted() {
+			this.scrollToBottom();
 		},
 		data() {
 			return {
-				
+				bottom:''
 			};
+		},
+		methods:{
+			scrollToBottom(){
+				this.bottom = 'bottom';
+				setTimeout(()=>{
+					this.bottom = '';
+				},1000)
+			}
 		}
 	}
 </script>
@@ -80,6 +90,9 @@
 					display: inline-block;
 					padding: 15rpx 20rpx;
 					border-radius: 8rpx;
+					word-break:break-all;
+					
+					word-wrap:break-word;
 					.cell-zui{
 						border-right:14rpx solid #fff;
 						border-top: 12rpx solid transparent;
@@ -113,6 +126,9 @@
 					padding: 15rpx 20rpx;
 					text-align: left;
 					border-radius: 8rpx;
+					word-break:break-all;
+					
+					word-wrap:break-word;
 					.cell-zui{
 						border-left:14rpx solid #95EC69;
 						border-top: 12rpx solid transparent;

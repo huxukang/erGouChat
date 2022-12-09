@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/tab/chat/chat",
+    "pages/tab/friends/friends",
+    "pages/tab/find/find",
+    "pages/tab/mine/mine",
+    "pages/chating/chating"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "fontSize": "12px",
+    "borderStyle": "#cdcdcd",
+    "color": "#000000",
+    "selectedColor": "#1ba824",
+    "backgroundColor": "rgb(244, 244, 244)",
+    "height": "60px",
+    "position": "bottom",
+    "list": [
+      {
+        "text": "聊天室",
+        "pagePath": "pages/tab/chat/chat",
+        "iconPath": "static/tarbar/chat.png",
+        "selectedIconPath": "static/tarbar/chatActived.png"
+      },
+      {
+        "text": "好友",
+        "pagePath": "pages/tab/friends/friends",
+        "iconPath": "static/tarbar/frients.png",
+        "selectedIconPath": "static/tarbar/friendsActived.png"
+      },
+      {
+        "text": "发现",
+        "pagePath": "pages/tab/find/find",
+        "iconPath": "static/tarbar/find.png",
+        "selectedIconPath": "static/tarbar/find_1.png"
+      },
+      {
+        "text": "我",
+        "pagePath": "pages/tab/mine/mine",
+        "iconPath": "static/tarbar/mine.png",
+        "selectedIconPath": "static/tarbar/mine_1.png"
+      }
+    ]
+  },
+  "uniStatistics": {
+    "enable": true
+  },
+  "usingComponents": {}
+}

@@ -371,8 +371,6 @@ var components
 try {
   components = {
     uniIcons: __webpack_require__(/*! @/uni_modules/uni-icons/components/uni-icons/uni-icons.vue */ 8)
-      .default,
-    uniTooltip: __webpack_require__(/*! @/uni_modules/uni-tooltip/components/uni-tooltip/uni-tooltip.vue */ 22)
       .default
   }
 } catch (e) {
@@ -450,18 +448,15 @@ var render = function() {
                                 staticStyle: { "margin-right": "25rpx" },
                                 attrs: { _i: 10 }
                               }),
-                              _c("uni-icons", { attrs: { _i: 11 } }),
-                              _c("uni-tooltip", { attrs: { _i: 12 } }, [
-                                _vm._v("asdasdas")
-                              ])
+                              _c("uni-icons", { attrs: { _i: 11 } })
                             ],
                             1
                           )
-                        : _vm._$g(13, "e")
+                        : _vm._$g(12, "e")
                         ? _c(
                             "uni-view",
-                            { attrs: { _i: 13 } },
-                            [_c("uni-icons", { attrs: { _i: 14 } })],
+                            { attrs: { _i: 12 } },
+                            [_c("uni-icons", { attrs: { _i: 13 } })],
                             1
                           )
                         : _vm._e()
@@ -471,18 +466,18 @@ var render = function() {
                 ],
                 1
               )
-            : _vm._$g(15, "e")
+            : _vm._$g(14, "e")
             ? _c(
                 "uni-view",
                 {
-                  class: _vm._$g(15, "c"),
-                  style: _vm._$g(15, "s"),
-                  attrs: { _i: 15 }
+                  class: _vm._$g(14, "c"),
+                  style: _vm._$g(14, "s"),
+                  attrs: { _i: 14 }
                 },
                 [
-                  _vm._t("left", null, { _i: 16 }),
-                  _vm._t("title", null, { _i: 17 }),
-                  _vm._t("right", null, { _i: 18 })
+                  _vm._t("left", null, { _i: 15 }),
+                  _vm._t("title", null, { _i: 16 }),
+                  _vm._t("right", null, { _i: 17 })
                 ],
                 2
               )
@@ -1284,197 +1279,14 @@ function normalizeComponent (
 
 
 /***/ }),
-/* 22 */
-/*!****************************************************************************************!*\
-  !*** D:/demo/erGouChat/uni_modules/uni-tooltip/components/uni-tooltip/uni-tooltip.vue ***!
-  \****************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _uni_tooltip_vue_vue_type_template_id_73a6afdc_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./uni-tooltip.vue?vue&type=template&id=73a6afdc&scoped=true& */ 23);
-/* harmony import */ var _uni_tooltip_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./uni-tooltip.vue?vue&type=script&lang=js& */ 25);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _uni_tooltip_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _uni_tooltip_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var _uni_tooltip_vue_vue_type_style_index_0_id_73a6afdc_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./uni-tooltip.vue?vue&type=style&index=0&id=73a6afdc&scoped=true&lang=css& */ 27);
-/* harmony import */ var _LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../../../LenovoQMDownload/SoftMgr/1954-2020-07-22033532-1595360132222/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/runtime/componentNormalizer.js */ 21);
-
-var renderjs
-
-
-
-
-
-/* normalize component */
-
-var component = Object(_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
-  _uni_tooltip_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _uni_tooltip_vue_vue_type_template_id_73a6afdc_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _uni_tooltip_vue_vue_type_template_id_73a6afdc_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
-  false,
-  null,
-  "73a6afdc",
-  null,
-  false,
-  _uni_tooltip_vue_vue_type_template_id_73a6afdc_scoped_true___WEBPACK_IMPORTED_MODULE_0__["components"],
-  renderjs
-)
-
-component.options.__file = "uni_modules/uni-tooltip/components/uni-tooltip/uni-tooltip.vue"
-/* harmony default export */ __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-/* 23 */
-/*!***********************************************************************************************************************************!*\
-  !*** D:/demo/erGouChat/uni_modules/uni-tooltip/components/uni-tooltip/uni-tooltip.vue?vue&type=template&id=73a6afdc&scoped=true& ***!
-  \***********************************************************************************************************************************/
-/*! exports provided: render, staticRenderFns, recyclableRender, components */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_16_0_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_filter_modules_template_js_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_page_meta_js_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_style_js_uni_tooltip_vue_vue_type_template_id_73a6afdc_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../LenovoQMDownload/SoftMgr/1954-2020-07-22033532-1595360132222/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../LenovoQMDownload/SoftMgr/1954-2020-07-22033532-1595360132222/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--16-0!../../../../../../LenovoQMDownload/SoftMgr/1954-2020-07-22033532-1595360132222/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/filter-modules-template.js!../../../../../../LenovoQMDownload/SoftMgr/1954-2020-07-22033532-1595360132222/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!../../../../../../LenovoQMDownload/SoftMgr/1954-2020-07-22033532-1595360132222/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!../../../../../../LenovoQMDownload/SoftMgr/1954-2020-07-22033532-1595360132222/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/view/style.js!./uni-tooltip.vue?vue&type=template&id=73a6afdc&scoped=true& */ 24);
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_16_0_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_filter_modules_template_js_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_page_meta_js_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_style_js_uni_tooltip_vue_vue_type_template_id_73a6afdc_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_16_0_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_filter_modules_template_js_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_page_meta_js_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_style_js_uni_tooltip_vue_vue_type_template_id_73a6afdc_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "recyclableRender", function() { return _LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_16_0_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_filter_modules_template_js_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_page_meta_js_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_style_js_uni_tooltip_vue_vue_type_template_id_73a6afdc_scoped_true___WEBPACK_IMPORTED_MODULE_0__["recyclableRender"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "components", function() { return _LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_16_0_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_filter_modules_template_js_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_page_meta_js_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_style_js_uni_tooltip_vue_vue_type_template_id_73a6afdc_scoped_true___WEBPACK_IMPORTED_MODULE_0__["components"]; });
-
-
-
-/***/ }),
-/* 24 */
-/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--16-0!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/filter-modules-template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/view/style.js!D:/demo/erGouChat/uni_modules/uni-tooltip/components/uni-tooltip/uni-tooltip.vue?vue&type=template&id=73a6afdc&scoped=true& ***!
-  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-/*! exports provided: render, staticRenderFns, recyclableRender, components */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "recyclableRender", function() { return recyclableRender; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "components", function() { return components; });
-var components
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "uni-view",
-    { staticClass: _vm._$g(0, "sc"), attrs: { _i: 0 } },
-    [
-      _vm._t("default", null, { _i: 1 }),
-      _vm._$g(2, "i")
-        ? _c(
-            "uni-view",
-            { staticClass: _vm._$g(2, "sc"), attrs: { _i: 2 } },
-            [_vm._t("content", [_vm._v(_vm._$g(3, "t0-0"))], { _i: 3 })],
-            2
-          )
-        : _vm._e()
-    ],
-    2
-  )
-}
-var recyclableRender = false
-var staticRenderFns = []
-render._withStripped = true
-
-
-
-/***/ }),
-/* 25 */
-/*!*****************************************************************************************************************!*\
-  !*** D:/demo/erGouChat/uni_modules/uni-tooltip/components/uni-tooltip/uni-tooltip.vue?vue&type=script&lang=js& ***!
-  \*****************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_script_js_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_using_components_js_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_style_js_uni_tooltip_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../LenovoQMDownload/SoftMgr/1954-2020-07-22033532-1595360132222/HBuilderX/plugins/uniapp-cli/node_modules/babel-loader/lib!../../../../../../LenovoQMDownload/SoftMgr/1954-2020-07-22033532-1595360132222/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!../../../../../../LenovoQMDownload/SoftMgr/1954-2020-07-22033532-1595360132222/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/view/script.js!../../../../../../LenovoQMDownload/SoftMgr/1954-2020-07-22033532-1595360132222/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/using-components.js!../../../../../../LenovoQMDownload/SoftMgr/1954-2020-07-22033532-1595360132222/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!../../../../../../LenovoQMDownload/SoftMgr/1954-2020-07-22033532-1595360132222/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/view/style.js!./uni-tooltip.vue?vue&type=script&lang=js& */ 26);
-/* harmony import */ var _LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_script_js_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_using_components_js_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_style_js_uni_tooltip_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_script_js_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_using_components_js_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_style_js_uni_tooltip_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_script_js_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_using_components_js_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_style_js_uni_tooltip_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_script_js_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_using_components_js_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_style_js_uni_tooltip_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
- /* harmony default export */ __webpack_exports__["default"] = (_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_script_js_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_using_components_js_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_style_js_uni_tooltip_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default.a); 
-
-/***/ }),
-/* 26 */
-/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/view/script.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/using-components.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/view/style.js!D:/demo/erGouChat/uni_modules/uni-tooltip/components/uni-tooltip/uni-tooltip.vue?vue&type=script&lang=js& ***!
-  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default =
-
-{
-  name: "uni-tooltip", props: ["content", "placement"],
-  data: function data() {
-    return {
-      wxsProps: {} };
-
-  },
-  components: {} };exports.default = _default;
-
-/***/ }),
-/* 27 */
-/*!*************************************************************************************************************************************************!*\
-  !*** D:/demo/erGouChat/uni_modules/uni-tooltip/components/uni-tooltip/uni-tooltip.vue?vue&type=style&index=0&id=73a6afdc&scoped=true&lang=css& ***!
-  \*************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_app_vue_style_loader_index_js_ref_6_oneOf_1_0_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_stylePostLoader_js_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_2_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_style_js_uni_tooltip_vue_vue_type_style_index_0_id_73a6afdc_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../LenovoQMDownload/SoftMgr/1954-2020-07-22033532-1595360132222/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/app-vue-style-loader??ref--6-oneOf-1-0!../../../../../../LenovoQMDownload/SoftMgr/1954-2020-07-22033532-1595360132222/HBuilderX/plugins/uniapp-cli/node_modules/css-loader/dist/cjs.js??ref--6-oneOf-1-1!../../../../../../LenovoQMDownload/SoftMgr/1954-2020-07-22033532-1595360132222/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!../../../../../../LenovoQMDownload/SoftMgr/1954-2020-07-22033532-1595360132222/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-oneOf-1-2!../../../../../../LenovoQMDownload/SoftMgr/1954-2020-07-22033532-1595360132222/HBuilderX/plugins/uniapp-cli/node_modules/postcss-loader/src??ref--6-oneOf-1-3!../../../../../../LenovoQMDownload/SoftMgr/1954-2020-07-22033532-1595360132222/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!../../../../../../LenovoQMDownload/SoftMgr/1954-2020-07-22033532-1595360132222/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/view/style.js!./uni-tooltip.vue?vue&type=style&index=0&id=73a6afdc&scoped=true&lang=css& */ 28);
-/* harmony import */ var _LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_app_vue_style_loader_index_js_ref_6_oneOf_1_0_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_stylePostLoader_js_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_2_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_style_js_uni_tooltip_vue_vue_type_style_index_0_id_73a6afdc_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_app_vue_style_loader_index_js_ref_6_oneOf_1_0_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_stylePostLoader_js_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_2_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_style_js_uni_tooltip_vue_vue_type_style_index_0_id_73a6afdc_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_app_vue_style_loader_index_js_ref_6_oneOf_1_0_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_stylePostLoader_js_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_2_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_style_js_uni_tooltip_vue_vue_type_style_index_0_id_73a6afdc_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_app_vue_style_loader_index_js_ref_6_oneOf_1_0_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_stylePostLoader_js_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_2_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_style_js_uni_tooltip_vue_vue_type_style_index_0_id_73a6afdc_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
- /* harmony default export */ __webpack_exports__["default"] = (_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_app_vue_style_loader_index_js_ref_6_oneOf_1_0_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_stylePostLoader_js_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_2_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_LenovoQMDownload_SoftMgr_1954_2020_07_22033532_1595360132222_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_style_js_uni_tooltip_vue_vue_type_style_index_0_id_73a6afdc_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
-
-/***/ }),
-/* 28 */
-/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/app-vue-style-loader??ref--6-oneOf-1-0!./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-1-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-oneOf-1-2!./node_modules/postcss-loader/src??ref--6-oneOf-1-3!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/view/style.js!D:/demo/erGouChat/uni_modules/uni-tooltip/components/uni-tooltip/uni-tooltip.vue?vue&type=style&index=0&id=73a6afdc&scoped=true&lang=css& ***!
-  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(/*! !../../../../../../LenovoQMDownload/SoftMgr/1954-2020-07-22033532-1595360132222/HBuilderX/plugins/uniapp-cli/node_modules/css-loader/dist/cjs.js??ref--6-oneOf-1-1!../../../../../../LenovoQMDownload/SoftMgr/1954-2020-07-22033532-1595360132222/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!../../../../../../LenovoQMDownload/SoftMgr/1954-2020-07-22033532-1595360132222/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-oneOf-1-2!../../../../../../LenovoQMDownload/SoftMgr/1954-2020-07-22033532-1595360132222/HBuilderX/plugins/uniapp-cli/node_modules/postcss-loader/src??ref--6-oneOf-1-3!../../../../../../LenovoQMDownload/SoftMgr/1954-2020-07-22033532-1595360132222/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!../../../../../../LenovoQMDownload/SoftMgr/1954-2020-07-22033532-1595360132222/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/view/style.js!./uni-tooltip.vue?vue&type=style&index=0&id=73a6afdc&scoped=true&lang=css& */ 29);
-if(content.__esModule) content = content.default;
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var add = __webpack_require__(/*! ../../../../../../LenovoQMDownload/SoftMgr/1954-2020-07-22033532-1595360132222/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/app-vue-style-loader/lib/addStylesClient.js */ 19).default
-var update = add("ee3f2cf0", content, false, {"sourceMap":false,"shadowMode":false});
-// Hot Module Replacement
-if(false) {}
-
-/***/ }),
-/* 29 */
-/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-1-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-oneOf-1-2!./node_modules/postcss-loader/src??ref--6-oneOf-1-3!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/view/style.js!D:/demo/erGouChat/uni_modules/uni-tooltip/components/uni-tooltip/uni-tooltip.vue?vue&type=style&index=0&id=73a6afdc&scoped=true&lang=css& ***!
-  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// Imports
-var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../../LenovoQMDownload/SoftMgr/1954-2020-07-22033532-1595360132222/HBuilderX/plugins/uniapp-cli/node_modules/css-loader/dist/runtime/api.js */ 16);
-exports = ___CSS_LOADER_API_IMPORT___(false);
-// Module
-exports.push([module.i, "\n.uni-tooltip[data-v-73a6afdc] {\n\tposition: relative;\n\tcursor: pointer;\n}\n.uni-tooltip-popup[data-v-73a6afdc] {\n\tz-index: 1;\n\tdisplay: none;\n\tposition: absolute;\n\tleft: 0;\n\tbackground-color: #333;\n\tborder-radius: 8px;\n\tcolor: #fff;\n\tfont-size: 12px;\n\ttext-align: left;\n\tline-height: 16px;\n\tpadding: 12px;\n}\n.uni-tooltip:hover .uni-tooltip-popup[data-v-73a6afdc] {\n\tdisplay: block;\n}\n", ""]);
-// Exports
-module.exports = exports;
-
-
-/***/ }),
+/* 22 */,
+/* 23 */,
+/* 24 */,
+/* 25 */,
+/* 26 */,
+/* 27 */,
+/* 28 */,
+/* 29 */,
 /* 30 */
 /*!*******************************************************************************************!*\
   !*** D:/demo/erGouChat/components/tarBarHeader/tarBarHeader.vue?vue&type=script&lang=js& ***!
@@ -3833,7 +3645,9 @@ try {
   components = {
     tarBarHeader: __webpack_require__(/*! @/components/tarBarHeader/tarBarHeader.vue */ 5).default,
     scrollArea: __webpack_require__(/*! @/components/scrollArea/scrollArea.vue */ 35).default,
-    chating: __webpack_require__(/*! @/components/chating/chating.vue */ 111).default
+    chating: __webpack_require__(/*! @/components/chating/chating.vue */ 111).default,
+    uniIcons: __webpack_require__(/*! @/uni_modules/uni-icons/components/uni-icons/uni-icons.vue */ 8)
+      .default
   }
 } catch (e) {
   if (
@@ -3871,7 +3685,7 @@ var render = function() {
               staticStyle: { height: "100%", overflow: "hidden" },
               attrs: { _i: 3 }
             },
-            [_c("chating", { attrs: { _i: 4 } })],
+            [_c("chating", { ref: "chat", attrs: { _i: 4 } })],
             1
           )
         ],
@@ -3885,18 +3699,78 @@ var render = function() {
           attrs: { id: "text-input", _i: 5 }
         },
         [
-          _c("v-uni-textarea", {
-            staticClass: _vm._$g(6, "sc"),
-            attrs: { "auto-height": true, "adjust-position": false, _i: 6 },
-            on: {
-              keyboardheightchange: function($event) {
-                return _vm.$handleViewEvent($event)
-              },
-              input: function($event) {
-                return _vm.$handleViewEvent($event)
-              }
-            }
-          })
+          _c(
+            "uni-view",
+            { staticClass: _vm._$g(6, "sc"), attrs: { _i: 6 } },
+            [
+              _c("v-uni-image", {
+                staticClass: _vm._$g(7, "sc"),
+                attrs: { src: _vm._$g(7, "a-src"), _i: 7 }
+              })
+            ],
+            1
+          ),
+          _c(
+            "uni-view",
+            { staticClass: _vm._$g(8, "sc"), attrs: { _i: 8 } },
+            [
+              _c("v-uni-textarea", {
+                staticClass: _vm._$g(9, "sc"),
+                attrs: { "auto-height": true, "adjust-position": false, _i: 9 },
+                on: {
+                  keyboardheightchange: function($event) {
+                    return _vm.$handleViewEvent($event)
+                  },
+                  input: function($event) {
+                    return _vm.$handleViewEvent($event)
+                  }
+                },
+                model: {
+                  value: _vm._$g(9, "v-model"),
+                  callback: function() {},
+                  expression: "textValue"
+                }
+              })
+            ],
+            1
+          ),
+          _c(
+            "uni-view",
+            {
+              staticClass: _vm._$g(10, "sc"),
+              style: _vm._$g(10, "s"),
+              attrs: { _i: 10 }
+            },
+            [
+              _c(
+                "uni-view",
+                { staticClass: _vm._$g(11, "sc"), attrs: { _i: 11 } },
+                [
+                  _c("v-uni-image", {
+                    staticClass: _vm._$g(12, "sc"),
+                    attrs: { src: _vm._$g(12, "a-src"), _i: 12 }
+                  }),
+                  _vm._$g(13, "i")
+                    ? _c("uni-icons", { attrs: { _i: 13 } })
+                    : _c(
+                        "v-uni-button",
+                        {
+                          staticClass: _vm._$g(14, "sc"),
+                          attrs: { _i: 14 },
+                          on: {
+                            click: function($event) {
+                              return _vm.$handleViewEvent($event)
+                            }
+                          }
+                        },
+                        [_vm._v("发送")]
+                      )
+                ],
+                1
+              )
+            ],
+            1
+          )
         ],
         1
       )
@@ -3994,104 +3868,117 @@ var render = function() {
     "v-uni-scroll-view",
     {
       staticClass: _vm._$g(0, "sc"),
-      attrs: { "scroll-y": true, "scroll-top": "100000000", _i: 0 }
+      attrs: {
+        "scroll-y": true,
+        "scroll-into-view": _vm._$g(0, "a-scroll-into-view"),
+        _i: 0
+      }
     },
-    _vm._l(_vm._$g(1, "f"), function(item, $10, $20, $30) {
-      return _c(
-        "uni-view",
-        {
-          key: item,
-          staticClass: _vm._$g("1-" + $30, "sc"),
-          attrs: { _i: "1-" + $30 }
-        },
-        [
-          _vm._$g("2-" + $30, "i")
-            ? _c(
-                "uni-view",
-                {
-                  staticClass: _vm._$g("2-" + $30, "sc"),
-                  attrs: { _i: "2-" + $30 }
-                },
-                [
-                  _c("v-uni-image", {
-                    staticClass: _vm._$g("3-" + $30, "sc"),
-                    attrs: { src: _vm._$g("3-" + $30, "a-src"), _i: "3-" + $30 }
-                  }),
-                  _c(
-                    "uni-view",
-                    {
-                      staticClass: _vm._$g("4-" + $30, "sc"),
-                      attrs: { _i: "4-" + $30 }
-                    },
-                    [
-                      _c(
-                        "uni-view",
-                        {
-                          staticClass: _vm._$g("5-" + $30, "sc"),
-                          attrs: { _i: "5-" + $30 }
-                        },
-                        [
-                          _vm._v(_vm._$g("5-" + $30, "t0-0")),
-                          _c("uni-view", {
-                            staticClass: _vm._$g("6-" + $30, "sc"),
-                            attrs: { _i: "6-" + $30 }
-                          })
-                        ],
-                        1
-                      )
-                    ],
-                    1
-                  )
-                ],
-                1
-              )
-            : _c(
-                "uni-view",
-                {
-                  staticClass: _vm._$g("7-" + $30, "sc"),
-                  attrs: { _i: "7-" + $30 }
-                },
-                [
-                  _c(
-                    "uni-view",
-                    {
-                      staticClass: _vm._$g("8-" + $30, "sc"),
-                      attrs: { _i: "8-" + $30 }
-                    },
-                    [
-                      _c(
-                        "uni-view",
-                        {
-                          staticClass: _vm._$g("9-" + $30, "sc"),
-                          attrs: { _i: "9-" + $30 }
-                        },
-                        [
-                          _vm._v(_vm._$g("9-" + $30, "t0-0")),
-                          _c("uni-view", {
-                            staticClass: _vm._$g("10-" + $30, "sc"),
-                            attrs: { _i: "10-" + $30 }
-                          })
-                        ],
-                        1
-                      )
-                    ],
-                    1
-                  ),
-                  _c("v-uni-image", {
-                    staticClass: _vm._$g("11-" + $30, "sc"),
-                    attrs: {
-                      src: _vm._$g("11-" + $30, "a-src"),
-                      _i: "11-" + $30
-                    }
-                  })
-                ],
-                1
-              )
-        ],
-        1
-      )
-    }),
-    1
+    [
+      _vm._l(_vm._$g(1, "f"), function(item, $10, $20, $30) {
+        return _c(
+          "uni-view",
+          {
+            key: item,
+            staticClass: _vm._$g("1-" + $30, "sc"),
+            attrs: { _i: "1-" + $30 }
+          },
+          [
+            _vm._$g("2-" + $30, "i")
+              ? _c(
+                  "uni-view",
+                  {
+                    staticClass: _vm._$g("2-" + $30, "sc"),
+                    attrs: { _i: "2-" + $30 }
+                  },
+                  [
+                    _c("v-uni-image", {
+                      staticClass: _vm._$g("3-" + $30, "sc"),
+                      attrs: {
+                        src: _vm._$g("3-" + $30, "a-src"),
+                        _i: "3-" + $30
+                      }
+                    }),
+                    _c(
+                      "uni-view",
+                      {
+                        staticClass: _vm._$g("4-" + $30, "sc"),
+                        attrs: { _i: "4-" + $30 }
+                      },
+                      [
+                        _c(
+                          "uni-view",
+                          {
+                            staticClass: _vm._$g("5-" + $30, "sc"),
+                            attrs: { _i: "5-" + $30 }
+                          },
+                          [
+                            _vm._v(_vm._$g("5-" + $30, "t0-0")),
+                            _c("uni-view", {
+                              staticClass: _vm._$g("6-" + $30, "sc"),
+                              attrs: { _i: "6-" + $30 }
+                            })
+                          ],
+                          1
+                        )
+                      ],
+                      1
+                    )
+                  ],
+                  1
+                )
+              : _c(
+                  "uni-view",
+                  {
+                    staticClass: _vm._$g("7-" + $30, "sc"),
+                    attrs: { _i: "7-" + $30 }
+                  },
+                  [
+                    _c(
+                      "uni-view",
+                      {
+                        staticClass: _vm._$g("8-" + $30, "sc"),
+                        attrs: { _i: "8-" + $30 }
+                      },
+                      [
+                        _c(
+                          "uni-view",
+                          {
+                            staticClass: _vm._$g("9-" + $30, "sc"),
+                            attrs: { _i: "9-" + $30 }
+                          },
+                          [
+                            _vm._v(_vm._$g("9-" + $30, "t0-0")),
+                            _c("uni-view", {
+                              staticClass: _vm._$g("10-" + $30, "sc"),
+                              attrs: { _i: "10-" + $30 }
+                            })
+                          ],
+                          1
+                        )
+                      ],
+                      1
+                    ),
+                    _c("v-uni-image", {
+                      staticClass: _vm._$g("11-" + $30, "sc"),
+                      attrs: {
+                        src: _vm._$g("11-" + $30, "a-src"),
+                        _i: "11-" + $30
+                      }
+                    })
+                  ],
+                  1
+                )
+          ],
+          1
+        )
+      }),
+      _c("uni-view", {
+        staticStyle: { height: "10rpx" },
+        attrs: { id: "bottom", _i: 12 }
+      })
+    ],
+    2
   )
 }
 var recyclableRender = false
@@ -4127,7 +4014,7 @@ __webpack_require__.r(__webpack_exports__);
 Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default =
 
 {
-  name: "chating", props: ["chatData", "userId"],
+  name: "chating", props: ["chatData", "userId", "num"],
   data: function data() {
     return {
       wxsProps: {} };
@@ -4183,7 +4070,7 @@ if(false) {}
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../LenovoQMDownload/SoftMgr/1954-2020-07-22033532-1595360132222/HBuilderX/plugins/uniapp-cli/node_modules/css-loader/dist/runtime/api.js */ 16);
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "@charset \"UTF-8\";\r\n/**\r\n * 这里是uni-app内置的常用样式变量\r\n *\r\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\r\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\r\n *\r\n */\r\n/**\r\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\r\n *\r\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\r\n */\r\n/* 颜色变量 */\r\n/* 行为相关颜色 */\r\n/* 文字基本颜色 */\r\n/* 背景颜色 */\r\n/* 边框颜色 */\r\n/* 尺寸变量 */\r\n/* 文字尺寸 */\r\n/* 图片尺寸 */\r\n/* Border Radius */\r\n/* 水平间距 */\r\n/* 垂直间距 */\r\n/* 透明度 */\r\n/* 文章场景相关 */\n.chating[data-v-c07a91cc] {\r\n  height: 100%;\r\n  padding: 0 30rpx;\n}\n.chating .chat-cell[data-v-c07a91cc] {\r\n  margin-bottom: 30rpx;\n}\n.chating .chat-cell .img[data-v-c07a91cc] {\r\n  width: 70rpx;\r\n  height: 70rpx;\n}\n.chating .chat-cell .other[data-v-c07a91cc] {\r\n  text-align: left;\r\n  display: flex;\n}\n.chating .chat-cell .other .text[data-v-c07a91cc] {\r\n  padding: 0 25rpx;\r\n  width: 500rpx;\n}\n.chating .chat-cell .other .text .text-cell[data-v-c07a91cc] {\r\n  background-color: #fff;\r\n  display: inline-block;\r\n  padding: 15rpx 20rpx;\r\n  border-radius: 8rpx;\n}\n.chating .chat-cell .other .text .text-cell .cell-zui[data-v-c07a91cc] {\r\n  border-right: 14rpx solid #fff;\r\n  border-top: 12rpx solid transparent;\r\n  border-bottom: 12rpx solid transparent;\r\n  left: -15rpx;\r\n  top: 30rpx;\n}\n.chating .chat-cell .text-cell[data-v-c07a91cc] {\r\n  position: relative;\n}\n.chating .chat-cell .text-cell .cell-zui[data-v-c07a91cc] {\r\n  position: absolute;\n}\n.chating .chat-cell .my[data-v-c07a91cc] {\r\n  display: flex;\r\n  padding-left: 80rpx;\n}\n.chating .chat-cell .my .text[data-v-c07a91cc] {\r\n  padding: 0 25rpx;\r\n  text-align: right;\r\n  width: 500rpx;\n}\n.chating .chat-cell .my .text .text-cell[data-v-c07a91cc] {\r\n  background-color: #95EC69;\r\n  display: inline-block;\r\n  padding: 15rpx 20rpx;\r\n  text-align: left;\r\n  border-radius: 8rpx;\n}\n.chating .chat-cell .my .text .text-cell .cell-zui[data-v-c07a91cc] {\r\n  border-left: 14rpx solid #95EC69;\r\n  border-top: 12rpx solid transparent;\r\n  border-bottom: 12rpx solid transparent;\r\n  right: -15rpx;\r\n  top: 25rpx;\n}\r\n", ""]);
+exports.push([module.i, "@charset \"UTF-8\";\r\n/**\r\n * 这里是uni-app内置的常用样式变量\r\n *\r\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\r\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\r\n *\r\n */\r\n/**\r\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\r\n *\r\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\r\n */\r\n/* 颜色变量 */\r\n/* 行为相关颜色 */\r\n/* 文字基本颜色 */\r\n/* 背景颜色 */\r\n/* 边框颜色 */\r\n/* 尺寸变量 */\r\n/* 文字尺寸 */\r\n/* 图片尺寸 */\r\n/* Border Radius */\r\n/* 水平间距 */\r\n/* 垂直间距 */\r\n/* 透明度 */\r\n/* 文章场景相关 */\n.chating[data-v-c07a91cc] {\r\n  height: 100%;\r\n  padding: 0 30rpx;\n}\n.chating .chat-cell[data-v-c07a91cc] {\r\n  margin-bottom: 30rpx;\n}\n.chating .chat-cell .img[data-v-c07a91cc] {\r\n  width: 70rpx;\r\n  height: 70rpx;\n}\n.chating .chat-cell .other[data-v-c07a91cc] {\r\n  text-align: left;\r\n  display: flex;\n}\n.chating .chat-cell .other .text[data-v-c07a91cc] {\r\n  padding: 0 25rpx;\r\n  width: 500rpx;\n}\n.chating .chat-cell .other .text .text-cell[data-v-c07a91cc] {\r\n  background-color: #fff;\r\n  display: inline-block;\r\n  padding: 15rpx 20rpx;\r\n  border-radius: 8rpx;\r\n  word-break: break-all;\r\n  word-wrap: break-word;\n}\n.chating .chat-cell .other .text .text-cell .cell-zui[data-v-c07a91cc] {\r\n  border-right: 14rpx solid #fff;\r\n  border-top: 12rpx solid transparent;\r\n  border-bottom: 12rpx solid transparent;\r\n  left: -15rpx;\r\n  top: 30rpx;\n}\n.chating .chat-cell .text-cell[data-v-c07a91cc] {\r\n  position: relative;\n}\n.chating .chat-cell .text-cell .cell-zui[data-v-c07a91cc] {\r\n  position: absolute;\n}\n.chating .chat-cell .my[data-v-c07a91cc] {\r\n  display: flex;\r\n  padding-left: 80rpx;\n}\n.chating .chat-cell .my .text[data-v-c07a91cc] {\r\n  padding: 0 25rpx;\r\n  text-align: right;\r\n  width: 500rpx;\n}\n.chating .chat-cell .my .text .text-cell[data-v-c07a91cc] {\r\n  background-color: #95EC69;\r\n  display: inline-block;\r\n  padding: 15rpx 20rpx;\r\n  text-align: left;\r\n  border-radius: 8rpx;\r\n  word-break: break-all;\r\n  word-wrap: break-word;\n}\n.chating .chat-cell .my .text .text-cell .cell-zui[data-v-c07a91cc] {\r\n  border-left: 14rpx solid #95EC69;\r\n  border-top: 12rpx solid transparent;\r\n  border-bottom: 12rpx solid transparent;\r\n  right: -15rpx;\r\n  top: 25rpx;\n}\r\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -4271,7 +4158,7 @@ if(false) {}
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../LenovoQMDownload/SoftMgr/1954-2020-07-22033532-1595360132222/HBuilderX/plugins/uniapp-cli/node_modules/css-loader/dist/runtime/api.js */ 16);
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "@charset \"UTF-8\";\r\n/**\r\n * 这里是uni-app内置的常用样式变量\r\n *\r\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\r\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\r\n *\r\n */\r\n/**\r\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\r\n *\r\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\r\n */\r\n/* 颜色变量 */\r\n/* 行为相关颜色 */\r\n/* 文字基本颜色 */\r\n/* 背景颜色 */\r\n/* 边框颜色 */\r\n/* 尺寸变量 */\r\n/* 文字尺寸 */\r\n/* 图片尺寸 */\r\n/* Border Radius */\r\n/* 水平间距 */\r\n/* 垂直间距 */\r\n/* 透明度 */\r\n/* 文章场景相关 */\n.text-input {\r\n  min-height: 120rpx;\r\n  text-align: center;\r\n  box-sizing: border-box;\r\n  padding: 20rpx 20rpx;\r\n  background-color: #f7f7f7;\n}\n.text-input .input {\r\n  display: inline-block;\r\n  border-radius: 15rpx;\r\n  padding: 20rpx;\r\n  font-size: 35rpx;\r\n  line-height: 40rpx;\r\n  background-color: #fff;\r\n  width: 500rpx;\r\n  /* max-height: 240rpx;\r\n\t\tmin-height: 40rpx; */\r\n  text-align: left;\r\n  padding: 20rpx 25rpx;\n}\r\n", ""]);
+exports.push([module.i, "@charset \"UTF-8\";\r\n/**\r\n * 这里是uni-app内置的常用样式变量\r\n *\r\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\r\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\r\n *\r\n */\r\n/**\r\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\r\n *\r\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\r\n */\r\n/* 颜色变量 */\r\n/* 行为相关颜色 */\r\n/* 文字基本颜色 */\r\n/* 背景颜色 */\r\n/* 边框颜色 */\r\n/* 尺寸变量 */\r\n/* 文字尺寸 */\r\n/* 图片尺寸 */\r\n/* Border Radius */\r\n/* 水平间距 */\r\n/* 垂直间距 */\r\n/* 透明度 */\r\n/* 文章场景相关 */\n.text-input {\r\n  min-height: 120rpx;\r\n  text-align: center;\r\n  box-sizing: border-box;\r\n  padding: 20rpx 20rpx;\r\n  background-color: #f7f7f7;\r\n  display: flex;\n}\n.text-input .input {\r\n  display: inline-block;\r\n  border-radius: 15rpx;\r\n  /* padding: 20rpx; */\r\n  font-size: 32rpx;\r\n  line-height: 40rpx;\r\n  background-color: #fff;\r\n  /* width: 410rpx; */\r\n  width: calc(100% - 50rpx);\r\n  /* max-height: 240rpx;\r\n\t\tmin-height: 40rpx; */\r\n  text-align: left;\r\n  padding: 20rpx 25rpx;\n}\n.text-input .view_left {\r\n  /* margin-top:20rpx; */\r\n  position: relative;\r\n  width: 80rpx;\n}\n.text-input .view_left .img {\r\n  position: absolute;\r\n  bottom: 15rpx;\r\n  left: 5rpx;\r\n  width: 60rpx;\r\n  height: 60rpx;\n}\n.text-input .view_center {\r\n  /* padding-top:10rpx; */\r\n  width: 380rpx;\r\n  flex: 1;\n}\n.text-input .view_right {\r\n  position: relative;\n}\n.text-input .view_right .right_cell {\r\n  position: absolute;\r\n  bottom: 2rpx;\r\n  left: 0;\r\n  /* display: inline-block; */\r\n  /* min-width: 160rpx; */\n}\n.text-input .view_right .right_cell .send {\r\n  display: inline-block;\r\n  width: 100rpx;\r\n  height: 60rpx;\r\n  font-size: 33rpx;\r\n  padding: 5rpx 10rpx;\r\n  margin-left: 10rpx;\r\n  line-height: 50rpx;\r\n  background-color: #07C160;\r\n  color: #fff;\n}\n.text-input .view_right .img {\r\n  /* display: inline-block; */\r\n  width: 60rpx;\r\n  height: 60rpx;\r\n  margin-left: 15rpx;\n}\r\n", ""]);
 // Exports
 module.exports = exports;
 

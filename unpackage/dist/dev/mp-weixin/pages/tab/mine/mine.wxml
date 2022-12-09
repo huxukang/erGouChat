@@ -1,0 +1,1 @@
+<view class="mine"><tar-bar-header vue-id="92602bcc-1" type backgroundColor="#fff" bind:__l="__l"></tar-bar-header><headers vue-id="92602bcc-2" bind:__l="__l"></headers><find-list vue-id="92602bcc-3" findList="{{list}}" bind:__l="__l"></find-list></view>

@@ -1,0 +1,9 @@
+{
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "tar-bar-header": "/components/tarBarHeader/tarBarHeader",
+    "scroll-area": "/components/scrollArea/scrollArea",
+    "friends-list": "/components/friendsList/friendsList",
+    "show-select": "/components/showSelect/showSelect"
+  }
+}

@@ -1,0 +1,1 @@
+<view><tar-bar-header vue-id="35725b4c-1" title="发现" backgroundColor="rgb(241, 241, 241)" color="black" left="{{false}}" bind:__l="__l"></tar-bar-header><find-list vue-id="35725b4c-2" findList="{{list}}" bind:__l="__l"></find-list></view>

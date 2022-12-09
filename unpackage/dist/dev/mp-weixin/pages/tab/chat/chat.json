@@ -1,0 +1,8 @@
+{
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "tar-bar-header": "/components/tarBarHeader/tarBarHeader",
+    "scroll-area": "/components/scrollArea/scrollArea",
+    "chat-list": "/components/chatList/chatList"
+  }
+}

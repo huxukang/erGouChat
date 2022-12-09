@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "uni-tooltip-mine": "/components/uni-tooltip-mine/uni-tooltip-mine"
+  },
+  "component": true
+}

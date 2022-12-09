@@ -19,7 +19,7 @@
 						<uni-icons type="plus" size="24">
 							
 						</uni-icons>
-						<uni-tooltip content="asda">asdasdas</uni-tooltip>
+						
 
 					</view>
 					<view v-else-if="rightIndex === 1">
